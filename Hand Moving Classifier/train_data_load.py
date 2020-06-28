@@ -22,7 +22,7 @@ def get_hand_coordinates(DIR, frame_count, debug=False, tolerance=0.3):
 			people = data['people'][0]
 		except:
 			if debug:
-				print('No person detected in {} file'.format(file_index))
+				print('No person detected in {} frame of {} file'.format(file_index, file))
 			continue
 
 		pointer = [0,42]
